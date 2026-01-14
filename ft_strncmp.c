@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:08 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/13 17:29:54 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:15:32 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,32 +16,18 @@ max n compare
 < 0 → str1 is less than str2
 > 0 → str1 is greater than str2
 compare ascii values -> s1 - s2*/
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (i < n && s1[i] && s2[i])
+	while (i < n)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		if ((unsigned char)s1[i] != (unsigned char)s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		if (s1[i] == '\0')
+			return (0);
 		i++;
 	}
 	return (0);
 }
-/*
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	unsigned int	i;
-
-	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
-	}
-	return (0);
-}*/

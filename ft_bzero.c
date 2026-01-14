@@ -6,16 +6,16 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 10:36:40 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 11:24:32 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:15:03 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	bzero(void *s, size_t n)
 {
 	unsigned char	*p;
-	size_t	i;
+	size_t			i;
 
-	p = (unsigned char*)s;
+	p = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

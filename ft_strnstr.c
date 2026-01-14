@@ -6,14 +6,14 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:57:21 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/13 19:08:04 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:56:44 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(char *haystack, char *needle, unsigned int len)
+char	*ft_strnstr(char *haystack, char *needle, size_t len)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (needle[0] == '\0')
@@ -21,7 +21,7 @@ char	*ft_strnstr(char *haystack, char *needle, unsigned int len)
 	while (haystack[i] && (i < len))
 	{
 		j = 0;
-		while ((haystack[i + j] == needle[j]) && (i + j < len) && (needle[j]))
+		while ((i + j < len) && needle[j] && haystack[i + j] == needle[j])
 			j++;
 		if (needle[j] == '\0')
 			return (&haystack[i]);
@@ -29,27 +29,3 @@ char	*ft_strnstr(char *haystack, char *needle, unsigned int len)
 	}
 	return (NULL);
 }
-/*
-(needle[j])  ==>  needle[j] != '\0' //we haven't reached the end of needle
-char	*ft_strstr(char *str, char *to_find)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	if (to_find[0] == '\0') // return str if toFind is empty
-		return (str);
-	while (str[i])
-	{
-		j = 0;
-		while (str[i + j] == to_find[j])
-		{
-			j++;
-			if (to_find[j] == '\0')
-				return (&str[i]);  //Returns a pointer to the beginning of toFind
-		}
-		i++;
-	}
-	return (NULL);
-}
-*/
