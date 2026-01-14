@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:07:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 10:32:05 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:23:32 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 int				ft_atoi(char *str);
 char			ft_toupper(char c);
 char			ft_tolower(char c);
+void			bzero(void *s, size_t n);
 
 #endif
