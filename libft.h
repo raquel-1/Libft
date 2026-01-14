@@ -6,13 +6,14 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:07:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 12:19:17 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:52:31 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+//part 1
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -30,5 +31,6 @@ char	ft_toupper(char c);
 char	ft_tolower(char c);
 void	bzero(void *s, size_t n);
 void	*memset(void *s, int c, size_t n);
+void	*memcpy(void *dest, const void *src, size_t n);
 
 #endif
