@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:07:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 16:50:58 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:32:25 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ void	bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, void *src, size_t n);
 int		ft_memcmp(void *s1, void *s2, size_t n);
+void	*ft_memchr(void *s, int c, size_t n);
 
 #endif
