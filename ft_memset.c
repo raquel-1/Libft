@@ -6,9 +6,12 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 12:18:27 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 16:24:41 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/15 16:42:33 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -24,3 +27,18 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return ((void *)s);
 }
+/*
+int	main(void)
+{
+	char str1[20];
+	char str2[20];
+
+	memset(str1, 'X', 10);
+	ft_memset(str2, 'X', 10);
+	str1[10] = '\0';
+	str2[10] = '\0';
+
+	printf("memset   : %s\n", str1);
+	printf("ft_memset: %s\n", str2);
+	return (0);
+}*/

@@ -6,9 +6,12 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:08 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 12:15:32 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/15 17:55:44 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <stddef.h>
 
 /*
 max n compare
@@ -31,3 +34,23 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	}
 	return (0);
 }
+/*
+int	main(void)
+{
+	size_t n;
+
+	n = 5;
+	printf("cmp1 = %d\n", ft_strncmp("Hello", "Hello", n));
+	printf("cmp2 = %d\n", ft_strncmp("Hello", "Hellp", n));
+
+	n = 3;
+	printf("cmp3 = %d\n", ft_strncmp("Hello", "Hellp", n));
+
+	n = 5;
+	printf("cmp4 = %d\n", ft_strncmp("Hello", "Hel", n));
+
+	n = 0;
+	printf("cmp5 = %d\n", ft_strncmp("Hello", "Hellp", n));
+
+	return (0);	
+}*/

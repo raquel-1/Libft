@@ -6,9 +6,13 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:57:21 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 11:56:44 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/15 18:23:17 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <string.h>
+#include <stddef.h>
 
 char	*ft_strnstr(char *haystack, char *needle, size_t len)
 {
@@ -29,3 +33,17 @@ char	*ft_strnstr(char *haystack, char *needle, size_t len)
 	}
 	return (NULL);
 }
+/*
+int main(void)
+{
+	char    haystack[] = "Hola, mundo!";
+	char    needle[] = "mundo";
+	char    *res_ft;
+	size_t  len;
+
+    len = sizeof(haystack);
+	res_ft = ft_strnstr(haystack, needle, len);
+    printf("ft_strnstr: %s\n", res_ft);
+
+	return (0);
+}*/

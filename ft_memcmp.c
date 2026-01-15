@@ -6,9 +6,13 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:48:22 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/14 17:20:43 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/15 18:17:47 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <string.h>
+#include <stddef.h>
 
 /*
 max n compare
@@ -34,3 +38,19 @@ int	ft_memcmp(void *s1, void *s2, size_t n)
 	}
 	return (0);
 }
+/*
+int main(void)
+{
+    char    str1[] = "Hola, mundo!";
+    char    str2[] = "Hola, mundo!";
+    int     res_ft;
+    int     res_std;
+    size_t  n;
+    n = sizeof(str1);//n bytes to compare
+	res_ft = ft_memcmp(str1, str2, n);
+	res_std = memcmp(str1, str2, n);
+	printf("ft_memcmp: %d\n", res_ft);
+	printf("memcmp   : %d\n", res_std);
+
+	return (0);
+}*/
