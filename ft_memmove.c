@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/14 17:33:07 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 11:16:19 by raqroca-         ###   ########.fr       */
+/*   Created: 2026/01/15 11:19:13 by raqroca-          #+#    #+#             */
+/*   Updated: 2026/01/15 11:33:29 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-p_s[i] -> byte de memoria
-u_c    -> byte buscado*/
-void	*ft_memchr(void *s, int c, size_t n)
+void	*ft_memmove(void *dest, void *src, size_t n)
 {
-	unsigned char	*p_s;
-	unsigned char	u_c;
+	unsigned char	*p_dest;
+	unsigned char	*p_src;
 	size_t			i;
 
-	p_s = (unsigned char *)s;
-	u_c = (unsigned char)c;
 	i = 0;
+	p_dest = (unsigned char *)dest;
+	p_src = (unsigned char *)src;
+	if (dst == (void *)0 && src == (void *)0)
+		return (dest);
 	while (i < n)
 	{
-		if (p_s[i] == u_c)
-			return ((void *)&p_s[i]);
+		p_dest[i] = p_src[i];
 		i++;
 	}
-	return (NULL);
+	return (dest);
 }
