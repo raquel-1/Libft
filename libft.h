@@ -6,14 +6,18 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:07:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/17 17:57:40 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/17 18:38:02 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-//part 1
+# include <unistd.h>
+# include <stdlib.h>
+
+/*
+part 1 */
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -37,5 +41,8 @@ void	*ft_memchr(void *s, int c, size_t n);
 void	*ft_memmove(void *dest, void *src, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(char *s);
+/* 
+part 2 */
+void	ft_putchar_fd(char c, int fd);
 
 #endif
