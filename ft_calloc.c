@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:13:04 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/17 16:49:43 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/17 16:55:08 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	unsigned char	*tmp;
 
 	if (nmemb == 0 || size == 0)
-		return malloc(1);
+		return (malloc(1));
 	tmp = malloc(nmemb * size);
 	if (!tmp)
 		return (NULL);
