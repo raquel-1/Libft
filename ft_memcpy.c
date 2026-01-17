@@ -6,15 +6,14 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 13:47:44 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 16:49:59 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:16:43 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
-/*
-dest == (void *)0 && src == (void *)0     ==    !dest && !src*/
+
 void	*ft_memcpy(void *dest, void *src, size_t n)
 {
 	unsigned char	*p_dest;
@@ -42,14 +41,7 @@ int	main(void)
 
 	memcpy(dest1, src, 9);
 	ft_memcpy(dest2, src, 9);
-
 	printf("memcpy   : %s\n", dest1);
 	printf("ft_memcpy: %s\n", dest2);
-
-	if (ft_memcpy(NULL, NULL, 5) == NULL)
-		printf("ft_memcpy with NULL pointers returned NULL \n");
-	else
-		printf("ft_memcpy with NULL pointers NOT return NULL\n");
-
 	return (0);
 }*/
