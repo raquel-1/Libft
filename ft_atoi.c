@@ -6,14 +6,14 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:13:56 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 18:27:37 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:44:06 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	long	n;
 	int		sig;

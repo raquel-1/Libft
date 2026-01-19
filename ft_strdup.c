@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:50:53 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/17 17:56:11 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:47:28 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*dest;
 	size_t	i;

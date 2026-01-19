@@ -6,25 +6,20 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:53:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 16:24:56 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:03:01 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
-	int	count;
 	int	i;
 
 	i = 0;
-	count = 0;
 	while (str[i] != '\0')
-	{
-		count += 1;
 		i++;
-	}
-	return (count);
+	return (i);
 }
 /*
 int	main(void)

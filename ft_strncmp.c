@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:08 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 17:55:44 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:45:35 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ max n compare
 < 0 → str1 is less than str2
 > 0 → str1 is greater than str2
 compare ascii values -> s1 - s2*/
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 

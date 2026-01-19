@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 17:33:07 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/17 13:24:27 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:33:51 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 /*
 p_s[i] -> byte de memory
 u_c    -> byte looked*/
-void	*ft_memchr(void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*p_s;
 	unsigned char	u_c;

@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:48:22 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 18:17:47 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:38:00 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ max n compare
 0 → are equal
 < 0 → s1 is less than s2
 > 0 → s1 is greater than s2*/
-int	ft_memcmp(void *s1, void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*p_s1;
 	unsigned char	*p_s2;

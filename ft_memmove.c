@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:19:13 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/15 17:01:40 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:14:25 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*
  Visually, nothing happens when it overlaps because 
 we are going from back to front. */
-void	*ft_memmove(void *dest, void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*p_dest;
 	unsigned char	*p_src;
