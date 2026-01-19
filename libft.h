@@ -6,15 +6,15 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:07:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/19 12:49:20 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 16:50:07 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
-# include <stdlib.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 /*
 part 1 */
@@ -31,9 +31,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 int		ft_atoi(const char *str);
-char	ft_toupper(char c);
-char	ft_tolower(char c);
-void	bzero(void *s, size_t n);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -44,6 +44,7 @@ char	*ft_strdup(const char *s);
 /* 
 part 2 */
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);

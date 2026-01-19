@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:57:21 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/19 12:41:47 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/19 17:16:57 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	if (needle[0] == '\0')
-		return (haystack);
+		return ((char *)haystack);
 	while (haystack[i] && (i < len))
 	{
 		j = 0;
 		while ((i + j < len) && needle[j] && haystack[i + j] == needle[j])
 			j++;
 		if (needle[j] == '\0')
-			return (&haystack[i]);
+			return ((char *)&haystack[i]);
 		i++;
 	}
 	return (NULL);
