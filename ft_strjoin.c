@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 10:07:37 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/20 11:36:14 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/20 12:33:54 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
-	concat[i] = 0;
+	concat[i] = '\0';
 	return (concat);
 }
 /*
