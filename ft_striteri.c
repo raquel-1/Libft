@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:12:41 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/19 17:07:06 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/20 10:55:38 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	if (s)
 	{
 		i = 0;
-		while(s[i] != '\0')
+		while (s[i] != '\0')
 		{
 			f(i, &s[i]);
 			i++;
