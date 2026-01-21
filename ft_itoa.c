@@ -6,34 +6,14 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 21:31:40 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/20 22:53:35 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/21 10:55:43 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-static int	ft_intlen(int n)
-{
-	long	nb;
-	int		len;
-
-	nb = n;
-	if (nb == 0)
-		return (1);
-	len = 0;
-	if (nb < 0)
-	{
-		len++;
-		nb = -nb;
-	}
-	while (nb > 0)
-	{
-		nb /= 10;
-		len++;
-	}
-	return (len);
-}
+static int	ft_intlen(int n);
 
 char	*ft_itoa(int n)
 {
@@ -60,6 +40,28 @@ char	*ft_itoa(int n)
 		nb /= 10;
 	}
 	return (result);
+}
+
+static int	ft_intlen(int n)
+{
+	long	nb;
+	int		len;
+
+	nb = n;
+	if (nb == 0)
+		return (1);
+	len = 0;
+	if (nb < 0)
+	{
+		len++;
+		nb = -nb;
+	}
+	while (nb > 0)
+	{
+		nb /= 10;
+		len++;
+	}
+	return (len);
 }
 /*
 int	main(void)
