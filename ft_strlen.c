@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:53:26 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/23 13:26:59 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/23 23:54:24 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	main(void)
 	i = 0;
 	while (i < 4)
 	{
-		printf("length of \"%s\" is %d\n",tests[i], ft_strlen(tests[i]));
+		printf("length of \"%s\" is %ld\n",tests[i], ft_strlen(tests[i]));
 		i++;
 	}
 	return (0);
