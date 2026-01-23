@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 13:47:44 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/19 12:09:26 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:56:29 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*p_src;
 	size_t			i;
 
+	if (!dest && !src && n > 0)
+		return (NULL);
 	i = 0;
 	p_dest = (unsigned char *)dest;
 	p_src = (unsigned char *)src;
