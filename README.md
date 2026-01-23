@@ -31,9 +31,9 @@ Esto generará el archivo `libft.a` en el directorio raíz.
 - `make fclean` - Elimina los archivos objeto y la librería
 - `make re` - Recompila completamente el proyecto
 
-### Uso en tus programas
+### Uso en programas
 
-1. Incluye el header en tu código:
+1. Incluye el header en el código:
 ```c
 #include "libft.h"
 ```
@@ -119,7 +119,6 @@ Funciones:
 ### Documentación oficial
 - [Manual de C (man pages)](https://man7.org/linux/man-pages/)
 - [C Standard Library Reference](https://en.cppreference.com/w/c)
-- [GNU C Library Documentation](https://www.gnu.org/software/libc/manual/)
 
 ### Tutoriales y guías
 - [Beej's Guide to C Programming](https://beej.us/guide/bgc/)
@@ -136,10 +135,10 @@ De acuerdo con las instrucciones de 42 sobre IA, este proyecto se ha desarrollad
 
 - **Aprendizaje de fundamentos sin atajos**: Todo el código ha sido escrito manualmente para comprender el funcionamiento interno de cada función
 - **Consulta de documentación oficial**: Se han utilizado las man pages y documentación de C para entender el comportamiento esperado
-- **Aprendizaje entre pares**: Discusiones con compañeros sobre conceptos difíciles y enfoques de implementación
+- **Peer to Peer**: Discusiones con compañeros sobre conceptos difíciles y enfoques de implementación
 - **NO se ha usado IA para**: Generar código, obtener respuestas directas a problemas del proyecto, o resolver partes difíciles del ejercicio
 
-Este enfoque garantiza una comprensión real que será necesaria durante los exámenes (sin acceso a internet ni IA).
+Este enfoque facilita una comprensión real, que será necesaria en los exámenes sin internet ni IA.
 
 ## Notas técnicas
 
@@ -151,4 +150,4 @@ Este enfoque garantiza una comprensión real que será necesaria durante los ex�
 
 ---
 
-**Escuela**: 42
+**Escuela**: 42 MADRID
