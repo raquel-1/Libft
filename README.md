@@ -122,12 +122,7 @@ Funciones:
 
 ### Tutoriales y guías
 - [Beej's Guide to C Programming](https://beej.us/guide/bgc/)
-- [Learn-C.org - Interactive C Tutorial](https://www.learn-c.org/)
 - [GeeksforGeeks - C Programming](https://www.geeksforgeeks.org/c-programming-language/)
-
-### Herramientas útiles
-- [Norminette - 42 Norm Checker](https://github.com/42School/norminette)
-- [Valgrind - Memory leak detector](https://valgrind.org/)
 
 ### Uso de IA en este proyecto
 
