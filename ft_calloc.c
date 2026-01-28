@@ -6,20 +6,23 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:13:04 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/17 16:55:08 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/28 18:45:07 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdint.h> 
 #include <stdlib.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned char	*tmp;
+	void	*tmp;
 
 	if (nmemb == 0 || size == 0)
-		return (malloc(1));
+		return (NULL);
+	if (nmemb > SIZE_MAX / size)
+		return (NULL);
 	tmp = malloc(nmemb * size);
 	if (!tmp)
 		return (NULL);
