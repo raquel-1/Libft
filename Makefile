@@ -50,6 +50,7 @@ CC			= cc
 CFLAGS		= -Wall -Werror -Wextra
 
 all: $(NAME)
+bonus: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
