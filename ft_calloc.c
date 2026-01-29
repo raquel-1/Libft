@@ -6,7 +6,7 @@
 /*   By: raqroca- <raqroca-@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:13:04 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/28 19:07:20 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/29 11:09:36 by raqroca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*tmp;
 
-	if (nmemb == 0 || size == 0)
-		return (malloc(1));
-	if (nmemb > SIZE_MAX / size)
-		return (NULL);
 	tmp = malloc(nmemb * size);
-	if (!tmp)
-		return (NULL);
-	ft_memset(tmp, 0, nmemb * size);
+	if (tmp == NULL)
+		return (tmp);
+	ft_bzero(tmp, size * nmemb);
 	return (tmp);
 }
 /*
