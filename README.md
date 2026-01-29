@@ -126,14 +126,7 @@ Funciones:
 
 ### Uso de IA en este proyecto
 
-De acuerdo con las instrucciones de 42 sobre IA, este proyecto se ha desarrollado enfocándose en:
-
-- **Aprendizaje de fundamentos sin atajos**: Todo el código ha sido escrito manualmente para comprender el funcionamiento interno de cada función
-- **Consulta de documentación oficial**: Se han utilizado las man pages y documentación de C para entender el comportamiento esperado
-- **Peer to Peer**: Discusiones con compañeros sobre conceptos difíciles y enfoques de implementación
-- **NO se ha usado IA para**: Generar código, obtener respuestas directas a problemas del proyecto, o resolver partes difíciles del ejercicio
-
-Este enfoque facilita una comprensión real, que será necesaria en los exámenes sin internet ni IA.
+De acuerdo con las instrucciones de la actividad 42 sobre el uso de IA, este proyecto se ha desarrollado centrándose en aprender los fundamentos sin atajos, escribiendo todo el código manualmente para entender cómo funciona cada parte, consultando la documentación oficial y las man pages de C, y resolviendo dudas mediante discusiones con compañeros. No se ha utilizado IA para generar código ni para resolver directamente los problemas del proyecto, con el objetivo de lograr una comprensión real que será necesaria en los exámenes sin acceso a internet ni a herramientas de IA.
 
 ## Notas técnicas
 
