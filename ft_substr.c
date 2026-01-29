@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raqroca- <raqroca-@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: raromar <raromar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 11:22:25 by raqroca-          #+#    #+#             */
-/*   Updated: 2026/01/23 16:15:04 by raqroca-         ###   ########.fr       */
+/*   Updated: 2026/01/29 22:05:04 by raromar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	*create_empty_string(void);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -22,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-		return (ft_calloc(1, sizeof(char)));
+		return (create_empty_string());
 	if (len > s_len - start)
 		len = s_len - start;
 	sub = (char *)malloc(len + 1);
@@ -30,29 +32,18 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	i = 0;
 	while (i < len)
-	{
-		sub[i] = s[start + i];
-		i++;
-	}
+		sub[i++] = s[start++];
 	sub[i] = '\0';
 	return (sub);
 }
-/*
-int	main(void)
+
+static char	*create_empty_string(void)
 {
-	char *s = "hola mundo";
-	char *sub;
-	sub = ft_substr(s, 0, 4);
-	printf("case 1: \"%s\"\n", sub);//hola
-	free(sub);
-	sub = ft_substr(s, 5, 5);
-	printf("case 2: \"%s\"\n", sub);//mundo
-	free(sub);
-	sub = ft_substr(s, 5, 20);
-	printf("case 3: \"%s\"\n", sub);//mundo
-	free(sub);
-	sub = ft_substr(s, 50, 10);
-	printf("case 4: \"%s\"\n", sub);//""
-	free(sub);
-	return (0);
-}*/
+	char	*str;
+
+	str = (char *)malloc(1);
+	if (!str)
+		return (NULL);
+	str[0] = '\0';
+	return (str);
+}
