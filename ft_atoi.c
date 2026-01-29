@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -37,16 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (n * sig);
 }
-/*
-int	main(void)
-{
-	char	str[] = "   -12345";
-	int		res_ft;
-	int		res_std;
-
-	res_ft = ft_atoi(str);
-	res_std = atoi(str);
-	printf("ft_atoi: %d\n", res_ft);
-	printf("atoi   : %d\n", res_std);
-	return (0);
-}*/

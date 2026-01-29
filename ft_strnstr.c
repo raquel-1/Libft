@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -33,17 +31,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-int main(void)
-{
-	char    haystack[] = "Hola, mundo!";
-	char    needle[] = "mundo";
-	char    *res_ft;
-	size_t  len;
-
-    len = sizeof(haystack);
-	res_ft = ft_strnstr(haystack, needle, len);
-    printf("ft_strnstr: %s\n", res_ft);
-
-	return (0);
-}*/

@@ -10,26 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
-/*
-int	main(void)
-{
-	int tests[] = {0, 65, 127, 128, -1};
-	int i;
-
-	i = 0;
-	while (i < 5)
-	{
-		if (ft_isascii(tests[i]))
-			printf("%d is ASCII.\n", tests[i]);
-		else
-			printf("%d is not ASCII.\n", tests[i]);
-		i++;
-	}
-	return (0);
-}*/

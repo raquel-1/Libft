@@ -10,26 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
-/*
-int	main(void)
-{
-	int tests[] = {31, 32, 65, 126, 127};
-	int i;
-
-	i = 0;
-	while (i < 5)
-	{
-		if (ft_isprint(tests[i]))
-			printf("%d is printable.\n", tests[i]);
-		else
-			printf("%d is not printable.\n", tests[i]);
-		i++;
-	}
-	return (0);
-}*/

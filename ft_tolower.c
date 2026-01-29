@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -19,17 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-/*
-int main(void)
-{
-	char c1 = 'A';
-	char c2 = 'Z';
-	char c3 = 'a';
-	int c4 = 0;
-	printf("ft_tolower('%c') = %c\n", c1, ft_tolower(c1));
-	printf("ft_tolower('%c') = %c\n", c2, ft_tolower(c2));
-	printf("ft_tolower('%c') = %c\n", c3, ft_tolower(c3));
-	printf("ft_tolower('%c') = %c\n", c4, ft_tolower(c4));
-
-	return (0);
-}*/

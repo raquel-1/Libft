@@ -10,26 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
-/*
-int	main(void)
-{
-	char tests[] = {'0', 'z', '5', '!', 'm'};
-	int i;
-
-	i = 0;
-	while (i < 5)
-	{
-		if (ft_isdigit(tests[i]))
-			printf("'%c' is a digit.\n", tests[i]);
-		else
-			printf("'%c' is not a digit.\n", tests[i]);
-		i++;
-	}
-	return (0);
-}*/

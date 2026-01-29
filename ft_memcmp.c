@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
-
+#include "libft.h"
 /*
 max n compare
 0 → are equal
@@ -38,19 +35,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main(void)
-{
-    char    str1[] = "Hola, mundo!";
-    char    str2[] = "Hola, mundo!";
-    int     res_ft;
-    int     res_std;
-    size_t  n;
-    n = sizeof(str1);//n bytes to compare
-	res_ft = ft_memcmp(str1, str2, n);
-	res_std = memcmp(str1, str2, n);
-	printf("ft_memcmp: %d\n", res_ft);
-	printf("memcmp   : %d\n", res_std);
-
-	return (0);
-}*/

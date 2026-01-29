@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 /*
 p_s[i] -> byte de memory
 u_c    -> byte looked*/
@@ -34,23 +31,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char	str[] = "Hola, mundo!";
-	char	*res_ft;
-	char	*res_std;
-	int		c;
-	size_t 	n;
-	
-	c = 'm';
-	n = sizeof(str);
-	res_ft = ft_memchr(str, c, n);
-	res_std = memchr(str, c, n);
-	(void)res_ft;
-	(void)res_std;
-
-	printf("ft_memchr: %c\n", *res_ft);
-	printf("Resultado de memchr  : %c\n", *res_std);
-return (0);
-}*/
