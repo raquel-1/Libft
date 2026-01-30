@@ -30,7 +30,7 @@ int	main(void)
 	t_list *nodo1 = ft_lstnew(str);
 	printf("=== Prueba 1: Nodo con string ===\n");
 	printf("Contenido: %s\n", (char *)nodo1->content);
-	printf("Next apunta a: %p\n", nodo1->next);  // Debería ser NULL
+	printf("Next apunta a: %p\n", nodo1->next);  //NULL
 	int			num = 42;
 	t_list *nodo2 = ft_lstnew(&num);
 	printf("\n=== Prueba 2: Nodo con número ===\n");
@@ -38,8 +38,8 @@ int	main(void)
 	printf("Next apunta a: %p\n", nodo2->next); //null
 	t_list		*nodo3 = ft_lstnew(NULL);
 	printf("\n=== Prueba 3: Nodo con NULL ===\n");
-	printf("Contenido: %p\n", nodo3->content);   // Debería ser NULL
-	printf("Next apunta a: %p\n", nodo3->next);  // Debería ser NULL
+	printf("Contenido: %p\n", nodo3->content);   //NULL
+	printf("Next apunta a: %p\n", nodo3->next);  //NULL
 	free(nodo1);
 	free(nodo2);
 	free(nodo3);
